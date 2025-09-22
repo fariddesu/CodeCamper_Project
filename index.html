@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survei Pengalaman Belajar Coding Online</title>
+</head>
+
+<body>
+    <h1 id="title">Survei Pengalaman Belajar Coding Online</h1>
+    <p id="description">Terima kasih telah meluangkan waktu untuk membagikan pengalamanmu agar kami dapat meningkatkan
+        kualitas
+        pembelajaran.</p>
+    <form action="" id="survey-form" method="post">
+        <!-- Input Text -->
+        <div class="form-group">
+            <label for="nama-label">
+                Nama Lengkap:
+                <input type="text" name="nama" id="nama-label" placeholder="Nama Lengkap anda.." required>
+            </label>
+            <label for="email-label">
+                Email :
+                <input type="email" name="email" id="email-label" placeholder="aselole@example.com" required>
+            </label>
+            <label for="waktu-label">
+                Berapa jam Anda belajar coding per minggu?
+                <input type="number" name="waktu" id="waktu-label" min="1" max="24" placeholder="3 Jam" required>
+            </label>
+        </div>
+
+        <!-- Dropdown -->
+        <div class="form-group">
+            <label for="" id="keahlian-label">
+                Tingkat keahlian coding Anda saat ini:
+                <select name="keahlian" id="keahlian-label" required>
+                    <option value="" disabled selected>Pilih tingkat keahlian</option>
+                    <option value="pemula">Pemula</option>
+                    <option value="menengah">Menengah</option>
+                    <option value="mahir">Mahir</option>
+                    <option value="expert">Expert</option>
+            </label>
+        </div>
+
+        <!-- Radio Button -->
+        <div class="form-group">
+            Apa tujuan utama Anda belajar coding? (Pilih satu)
+            <label for="karir-label">
+                <input type="radio" name="tujuan" value="karir" id="karir-label" required> Ingin berkarir sebagai
+                developer
+            </label>
+            <label for="pengembangan-label">
+                <input type="radio" name="tujuan" value="pengembangan" id="pengembangan-label" required> Ingin
+                meningkatkan
+                kemampuan
+                programming
+            </label>
+            <label for="hobi-label">
+                <input type="radio" name="tujuan" value="hobi" id="hobi-label" required> Hobi
+            </label>
+            <label for="lainnya-label">
+                <input type="radio" name="tujuan" value="lainnya" id="lainnya-label" required> Lainnya
+            </label>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="form-group">
+            <label for="saran-label">
+                
+            </label>
+        </div>
+    </form>
+    <input type="submit" id="submit" value="Submit">
+
+</body>
+
+</html>
